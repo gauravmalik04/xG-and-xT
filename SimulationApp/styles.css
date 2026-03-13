@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f0f0f;
+  color: #e5e5e5;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  border-bottom: 1px solid #333;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header p {
+  color: #aaa;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.pitch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pitch-container {
+  background: #22312b;
+  border: 2px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.pitch-svg {
+  width: 100%;
+  height: auto;
+  cursor: crosshair;
+}
+
+.pitch-lines {
+  stroke: #c7d5cc;
+  stroke-width: 0.5;
+  fill: none;
+  opacity: 0.7;
+}
+
+.pitch-fill {
+  fill: #c7d5cc;
+}
+
+.goal-post {
+  fill: #111;
+  stroke: #000;
+  stroke-width: 0.8;
+}
+
+.player-dot {
+  fill: #3b82f6;
+  stroke: white;
+  stroke-width: 0.5;
+}
+
+.pitch-note {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.coord-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.coord-grid input {
+  padding: 8px;
+  background: #111;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 4px;
+}
+
+.cell-display {
+  margin-top: 10px;
+  font-family: monospace;
+}
+
+.toggle-btn {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background: #444;
+}
+
+.xt h1 {
+  color: orange;
+}
+
+.xg h1 {
+  color: #00e676;
+}
+
+.heat-square {
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.shot-lines {
+  stroke: #ef4444;
+  stroke-width: 0.5;
+  stroke-dasharray: 2 2;
+  opacity: 0.6;
+}
